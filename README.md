@@ -12,7 +12,7 @@
 * Powered by Yahoo Finance API
 
 ## Screenshots
-<img src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_1.png" width="420" />   <img  src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_2.png" width="420" />
+<img src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_1.png" width="360" />   <img  src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_2.png" width="360" />
 
 
 
