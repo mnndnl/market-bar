@@ -50,7 +50,7 @@ final class APIService {
 				switch completion {
 				case .finished: break
 				case .failure(let error):
-					fatalError(error.localizedDescription)
+					NSLog(error.localizedDescription)
 				}
 			}, receiveValue: { response in
 				let tickers = response.quoteResponse.result.filter { $0.quote != .unknown }
