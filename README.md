@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/manindaniil/market-bar/blob/main/logo.png" width="256" />
+<img align="right" src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_logo.png" width="256" />
 
-<p><h1 align="left">Tiny Market Bar</h1></p>
+<p><h1 align="left">Market Bar</h1></p>
 
 <p align="left">Tiny stocks watcher for the menu bar. Add your favorite tickers to always see the current price.</p>
 
@@ -11,8 +11,13 @@
 * Sliding line for 3 and more tickers in the menu bar
 * Powered by Yahoo Finance API
 
+## Screenshots
+<img src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_1.png" width="360" />   <img  src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_2.png" width="360" />
+
+
+
 ## Installation
-* Buy on the [AppStore](https://apps.apple.com/us/app/market-bar/id1548003011)
+* Buy on the [App Store](https://apps.apple.com/us/app/market-bar/id1548003011)
 * Free install directly via Xcode
 
 ## Usage
