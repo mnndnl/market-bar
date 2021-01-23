@@ -35,4 +35,9 @@ final class TickerView: NSView, NibLoadable {
 		guard let ticker = ticker else { return }
 		remove?(ticker)
 	}
+	
+	@IBAction private func onTicker(_ sender: NSButton) {
+		guard let link = ticker?.link else { return }
+		NSWorkspace.shared.open(link)
+	}
 }
