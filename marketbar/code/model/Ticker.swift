@@ -22,6 +22,7 @@ extension Ticker {
 	
 	var isCurrency: Bool { quote == .currency }
 	var quote: Quote { Quote.from(rawValue: quoteType) }
+	var link: URL? { URL(string: "https://finance.yahoo.com/quote/\(symbol)") }
 	
 	var absoluteChange: Double {
 		guard let price = price, let previousClose = previousClose else { return 0.0 }
