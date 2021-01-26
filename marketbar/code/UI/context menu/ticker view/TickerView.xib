@@ -58,7 +58,7 @@
                     </constraints>
                     <buttonCell key="cell" type="square" title="╳" bezelStyle="shadowlessSquare" alignment="right" imageScaling="proportionallyUpOrDown" inset="2" id="26g-0N-sdA">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system" size="10"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
                         <action selector="onRemove:" target="c8t-8H-lVp" id="WVb-vO-S4q"/>

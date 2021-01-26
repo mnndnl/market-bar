@@ -686,18 +686,18 @@
                 <customObject id="87s-3A-1pZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TickersViewController" id="1kK-Ad-fRc" customClass="TickersViewController" customModule="marketbar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4OU-9j-ft1">
-                        <rect key="frame" x="0.0" y="0.0" width="204" height="90"/>
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="124"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-DI-K0D">
-                                <rect key="frame" x="20" y="48" width="164" height="22"/>
+                                <rect key="frame" x="20" y="80" width="164" height="24"/>
                                 <subviews>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-Eg-NOU">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="Op2-MI-hOh"/>
+                                            <constraint firstAttribute="height" constant="24" id="Op2-MI-hOh"/>
                                         </constraints>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="Enter the new ticker" drawsBackground="YES" id="uox-Ag-Qh7">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="Enter the new ticker" bezelStyle="round" id="uox-Ag-Qh7">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -712,49 +712,56 @@
                                 </customSpacing>
                             </stackView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZNq-iN-omy">
-                                <rect key="frame" x="20" y="7" width="50" height="31"/>
+                                <rect key="frame" x="20" y="8" width="75" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="UB7-XM-NM1"/>
-                                    <constraint firstAttribute="width" constant="50" id="mKX-eZ-W31"/>
+                                    <constraint firstAttribute="height" constant="24" id="468-Yh-amP"/>
+                                    <constraint firstAttribute="width" constant="75" id="mKX-eZ-W31"/>
                                 </constraints>
-                                <buttonCell key="cell" type="roundRect" title="Close" bezelStyle="roundedRect" alignment="center" controlSize="large" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zBC-EH-C5O">
+                                <buttonCell key="cell" type="inline" title="Close" bezelStyle="inline" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zBC-EH-C5O">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="onClose:" target="1kK-Ad-fRc" id="Hj0-9h-5dw"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZKq-DV-jgc">
-                                <rect key="frame" x="134" y="7" width="50" height="31"/>
+                                <rect key="frame" x="109" y="8" width="75" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dI9-kN-4WW"/>
-                                    <constraint firstAttribute="width" constant="50" id="nEk-09-D0L"/>
+                                    <constraint firstAttribute="height" constant="24" id="2NQ-SR-glb"/>
+                                    <constraint firstAttribute="width" constant="75" id="nEk-09-D0L"/>
                                 </constraints>
-                                <buttonCell key="cell" type="roundRect" title="Quit" bezelStyle="roundedRect" alignment="center" controlSize="large" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GOR-1h-UrH">
+                                <buttonCell key="cell" type="inline" title="Quit" bezelStyle="inline" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GOR-1h-UrH">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="onQuit:" target="1kK-Ad-fRc" id="P5K-MD-fQG"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xX7-pc-Si0">
-                                <rect key="frame" x="46" y="2" width="112" height="10"/>
-                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="center" title="powered by yahoo finance" id="hev-NN-xPS">
-                                    <font key="font" metaFont="system" size="8"/>
-                                    <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bl9-Bg-Ma5">
+                                <rect key="frame" x="20" y="40" width="164" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="jCp-yO-Lx4"/>
+                                </constraints>
+                                <buttonCell key="cell" type="inline" title="Source Code on GitHub" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="AyF-ng-UmN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onGitHub:" target="1kK-Ad-fRc" id="hcc-2C-nGp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="xX7-pc-Si0" secondAttribute="bottom" constant="2" id="7Pj-lk-HS3"/>
                             <constraint firstAttribute="trailing" secondItem="ZKq-DV-jgc" secondAttribute="trailing" constant="20" symbolic="YES" id="7b6-wd-yku"/>
-                            <constraint firstItem="xX7-pc-Si0" firstAttribute="centerX" secondItem="4OU-9j-ft1" secondAttribute="centerX" id="FYX-IR-Cqg"/>
+                            <constraint firstItem="ZKq-DV-jgc" firstAttribute="top" secondItem="bl9-Bg-Ma5" secondAttribute="bottom" constant="8" symbolic="YES" id="QUf-KH-AvS"/>
+                            <constraint firstItem="bl9-Bg-Ma5" firstAttribute="leading" secondItem="4OU-9j-ft1" secondAttribute="leading" constant="20" symbolic="YES" id="VvY-Zh-6Z3"/>
+                            <constraint firstItem="bl9-Bg-Ma5" firstAttribute="centerX" secondItem="4OU-9j-ft1" secondAttribute="centerX" id="X4J-mk-CMj"/>
+                            <constraint firstItem="bl9-Bg-Ma5" firstAttribute="top" secondItem="KMS-DI-K0D" secondAttribute="bottom" constant="16" id="XVo-Re-7Xc"/>
+                            <constraint firstAttribute="trailing" secondItem="bl9-Bg-Ma5" secondAttribute="trailing" constant="20" symbolic="YES" id="gdq-ft-Zdo"/>
                             <constraint firstAttribute="bottom" secondItem="ZKq-DV-jgc" secondAttribute="bottom" constant="8" id="iwb-B1-8b2"/>
                             <constraint firstItem="KMS-DI-K0D" firstAttribute="top" secondItem="4OU-9j-ft1" secondAttribute="top" constant="20" symbolic="YES" id="os5-tt-YZP"/>
-                            <constraint firstAttribute="bottom" secondItem="KMS-DI-K0D" secondAttribute="bottom" constant="48" id="rH3-Ok-DEV"/>
                             <constraint firstAttribute="trailing" secondItem="KMS-DI-K0D" secondAttribute="trailing" constant="20" symbolic="YES" id="rhQ-ir-xtz"/>
                             <constraint firstItem="ZNq-iN-omy" firstAttribute="leading" secondItem="4OU-9j-ft1" secondAttribute="leading" constant="20" symbolic="YES" id="u6q-py-gfY"/>
                             <constraint firstAttribute="bottom" secondItem="ZNq-iN-omy" secondAttribute="bottom" constant="8" id="zXm-gQ-1tP"/>
@@ -767,7 +774,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="32" y="196.5"/>
+            <point key="canvasLocation" x="32" y="245"/>
         </scene>
     </scenes>
 </document>
