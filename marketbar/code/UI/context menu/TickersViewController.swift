@@ -38,6 +38,10 @@ final class TickersViewController: NSViewController {
 		NSApp.terminate(.none)
 	}
 	
+	@IBAction private func onGitHub(_ sender: NSButton) {
+		NSWorkspace.shared.open(githubLink)
+	}
+	
 	// MARK: - Private
 	
 	private func configure() {
@@ -57,6 +61,8 @@ final class TickersViewController: NSViewController {
 				self?.update()
 			}
 			.store(in: &cancellables)
+		
+		NSRunningApplication.current.activate(options: [.activateIgnoringOtherApps, .activateAllWindows])
 	}
 	
 	private func update() {

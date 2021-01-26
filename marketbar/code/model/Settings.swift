@@ -7,6 +7,8 @@
 
 import Foundation
 
+let githubLink = URL(string: "https://github.com/manindaniil/market-bar")!
+
 struct Settings: Codable {
 	
 	var tickers: [Ticker] = []
