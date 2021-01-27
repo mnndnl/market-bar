@@ -14,11 +14,14 @@
 ## Screenshots
 <img src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_1.png" width="360" />   <img  src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_screenshot_2.png" width="360" />
 
-
-
-## Installation
-* Buy on the [App Store](https://apps.apple.com/us/app/market-bar/id1548003011)
+## How to get
+* Buy on the [Mac App Store](https://apps.apple.com/us/app/market-bar/id1548003011) for $0.99
 * Free install directly via Xcode
+
+## How to build from source
+- Clone or download a copy of the repository
+- Open `marketbar/marketbar.xcodeproj`
+- Press play
 
 ## Usage
 Paste a ticker of the Company or currency's symbol in Yahoo format (e.g. for Bitcoin/USD pair will be BTCUSD=X)
