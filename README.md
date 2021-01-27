@@ -1,12 +1,12 @@
 <img align="right" src="https://github.com/manindaniil/market-bar/blob/main/media/marketbar_logo.png" width="256" />
 
-<p><h1 align="left">Market Bar</h1></p>
+<p><h1 align="left">Market Bar: Trading Quotes</h1></p>
 
 <p align="left">Tiny stocks watcher for the menu bar. Add your favorite tickers to always see the current price.</p>
 
 ## Key features
 * Supported equities, currencies, and ETFs prices
-* Up to 5 tickers to the menu bar
+* Up to 10 tickers to the menu bar
 * Price updates every 30 seconds
 * Sliding line for 3 and more tickers in the menu bar
 * Powered by Yahoo Finance API
@@ -27,7 +27,7 @@
 Paste a ticker of the Company or currency's symbol in Yahoo format (e.g. for Bitcoin/USD pair will be BTCUSD=X)
 
 ## Contact
-For any further information or features, feel free to contact manindaniil@gmail.com
+For any further information or features, feel free to contact manin.develop@gmail.com
 
 ## P.S.
 You always can say -thanks- to the author and buy the application on the App Store
