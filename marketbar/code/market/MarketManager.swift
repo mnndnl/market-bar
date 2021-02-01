@@ -54,8 +54,8 @@ final class MarketManager {
 	// MARK: - Tickers
 	
 	private func updateTickers(completion: (([Ticker]) -> Void)? = .none) {
-		service.update(tickers: storage.settings.tickers) { responce in
-			switch responce {
+		service.update(tickers: storage.settings.tickers) { response in
+			switch response {
 			case .success(let tickers):
 				completion?(tickers)
 			case .failure(let error):
