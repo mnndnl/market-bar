@@ -8,19 +8,19 @@
 import Combine
 import Foundation
 
-typealias TickersResponce = Result<[Ticker], Error>
+typealias TickersResponse = Result<[Ticker], Error>
 
 final class APIService {
 	
 	private var cancellable: AnyCancellable?
 	private let endpoint: String = "https://query1.finance.yahoo.com/v7/finance/quote?symbols="
 	
-	func add(tickerString: String, result: @escaping (TickersResponce) -> Void) {
+	func add(tickerString: String, result: @escaping (TickersResponse) -> Void) {
 		let ticker = Ticker(symbol: tickerString, name: "", price: 0.0, previousClose: 0.0)
 		update(tickers: [ticker], result: result)
 	}
 	
-	func update(tickers: [Ticker], result: @escaping (TickersResponce) -> Void) {
+	func update(tickers: [Ticker], result: @escaping (TickersResponse) -> Void) {
 		guard !tickers.isEmpty else {
 			result(.failure(APIError.emptyRequest))
 			return
@@ -36,7 +36,7 @@ final class APIService {
 	
 	// MARK: - Private
 	
-	private func request(to url: URL?, result: ((TickersResponce) -> Void)?) {
+	private func request(to url: URL?, result: ((TickersResponse) -> Void)?) {
 		guard let url = url else {
 			result?(.failure(APIError.invalidURL))
 			return
