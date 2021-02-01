@@ -16,7 +16,7 @@ final class MarketManager {
 	var didUpdateSettings = PassthroughSubject<Settings, Never>()
 	
 	var tickers: [Ticker] { settings.tickers }
-	var isFulledStorage: Bool { settings.tickers.count >= settings.maxNumberOfTickers }
+	var isFulledStorage: Bool { settings.tickers.count >= Settings.maxNumberOfTickers }
 	
 	private let service = APIService()
 	private let storage = MarketStorage()
