@@ -12,6 +12,7 @@ enum Quote: String {
 	case etf = "etf"
 	case equity = "equity"
 	case currency = "currency"
+	case crypto = "CRYPTOCURRENCY"
 	case unknown = "unknown"
 }
 
