@@ -33,6 +33,5 @@ extension Settings {
 	static let `default` = Settings(
 		tickers: [appleTicker, teslaTicker, amazonTicker],
 		updateInterval: 30.0,
-		changesInPercentage: true,
-		maxNumberOfTickers: 10)
+		changesInPercentage: true)
 }
