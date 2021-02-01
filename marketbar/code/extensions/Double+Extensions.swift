@@ -14,12 +14,13 @@ extension Double {
 	}
 	
 	var priceString: String {
-		round2 == 0.0 ? toString() : "\(round2)"
+		let rounded = round2
+		return rounded == 0.0 ? toString() : "\(rounded)"
 	}
 	
 	// MARK: - Private
 
-	func toString(decimal: Int = 9) -> String {
+	private func toString(decimal: Int = 9) -> String {
 		let value = decimal < 0 ? 0 : decimal
 		var string = String(format: "%.\(value)f", self)
 		
