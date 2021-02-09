@@ -24,7 +24,7 @@
 - Press play
 
 ## Usage
-Paste a ticker of the Company or currency's symbol in Yahoo format (e.g. for Bitcoin/USD pair will be BTCUSD=X)
+Paste a ticker of the Company or currency's symbol in Yahoo format (e.g. for Bitcoin/USD pair will be BTC-USD)
 
 ## Contact
 For any further information or features, feel free to contact manin.develop@gmail.com
