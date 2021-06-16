@@ -21,7 +21,8 @@ final class MarketStorage {
 	
 	private func getSettings() -> Settings {
 		let data = userDefaults.value(forKey: settingsKey) as? Data
-		return data?.decoded() ?? Settings.default
+		let settings = data?.decoded() ?? Settings.default
+		return checkOrderIndices(for: settings)
 	}
 	
 	private func set(settings: Settings?) {
@@ -33,5 +34,18 @@ final class MarketStorage {
 	
 	private func removeSettings() {
 		userDefaults.removeObject(forKey: settingsKey)
+	}
+	
+	// NOTE: - Adding order indices
+	
+	private func checkOrderIndices(for settings: Settings) -> Settings {
+		guard settings.tickers.contains(where: { $0.orderIndex == -1 }) else { return settings }
+		var newSettings = settings
+		let newTickers = settings.tickers.enumerated().compactMap { index, ticker in
+			Ticker(symbol: ticker.symbol, name: ticker.name, price: ticker.price, previousClose: ticker.previousClose, quoteType: ticker.quoteType, marketState: ticker.marketState, preMarketPrice: ticker.preMarketPrice, postMarketPrice: ticker.postMarketPrice, orderIndex: index)
+		}
+		newSettings.tickers = newTickers
+		set(settings: newSettings)
+		return newSettings
 	}
 }

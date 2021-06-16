@@ -30,6 +30,7 @@ final class APIService {
 			.map { $0.symbol + "," }
 			.reduce(endpoint, +)
 			.dropLast()
+			.replacingOccurrences(of: "^", with: "%5E")
 
 		request(to: URL(string: String(urlString)), result: result)
 	}
@@ -53,7 +54,14 @@ final class APIService {
 					NSLog(error.localizedDescription)
 				}
 			}, receiveValue: { response in
-				let tickers = response.quoteResponse.result.filter { $0.quote != .unknown }
+				let tickers = response.quoteResponse.result
+					.filter { $0.quote != .unknown }
+					.enumerated()
+					.compactMap { index, ticker -> Ticker in
+						var orderedTicker = ticker
+						orderedTicker.orderIndex = index
+						return orderedTicker
+					}
 				result?(.success(tickers))
 			})
 	}

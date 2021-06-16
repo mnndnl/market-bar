@@ -14,6 +14,9 @@ struct Settings: Codable {
 	var tickers: [Ticker] = []
 	var updateInterval: TimeInterval = 30.0
 	var changesInPercentage: Bool = false
+	var showOnlyOneTicker: Bool = false
+	var showTickerName: Bool = true
+	var showPremarketInBar: Bool = false
 	
 	static var maxNumberOfTickers: Int = 10
 }

@@ -9,15 +9,6 @@ import Foundation
 
 extension Double {
 	
-	var round2: Double {
-		(self * 100.0).rounded() / 100.0
-	}
-	
-	var priceString: String {
-		let rounded = round2
-		return rounded == 0.0 ? toString() : "\(rounded)"
-	}
-	
 	// MARK: - Private
 
 	private func toString(decimal: Int = 9) -> String {
@@ -25,7 +16,10 @@ extension Double {
 		var string = String(format: "%.\(value)f", self)
 		
 		while string.last == "0" || string.last == "." {
-			if string.last == "." { string = String(string.dropLast()); break}
+			if string.last == "." {
+				string = String(string.dropLast())
+				break
+			}
 			string = String(string.dropLast())
 		}
 		return string
