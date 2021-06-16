@@ -13,6 +13,7 @@ enum Quote: String {
 	case equity = "equity"
 	case currency = "currency"
 	case crypto = "cryptocurrency"
+	case index = "index"
 	case unknown = "unknown"
 }
 

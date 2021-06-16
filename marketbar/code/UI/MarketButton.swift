@@ -11,7 +11,7 @@ final class MarketButton: NSStatusBarButton {
 	
 	var handler: (() -> Void)? = .none
 	
-	private let tickers: [Ticker]
+	var tickers: [Ticker]
 	private let initOriginX: CGFloat
 	
 	init(tickers: [Ticker], originX: CGFloat) {
@@ -23,6 +23,13 @@ final class MarketButton: NSStatusBarButton {
 	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+	
+	// MARK: - Action
+	
+	func set(ticker: Ticker) {
+		tickers = [ticker]
+		configure()
 	}
 	
 	// MARK: - Animations
@@ -41,7 +48,7 @@ final class MarketButton: NSStatusBarButton {
 		}
 	}
 	
-	func fadeAnimation(alphaValue: CGFloat, duration: TimeInterval = 2.0, completion: (() -> Void)? = .none) {
+	func fadeAnimation(alphaValue: CGFloat, duration: TimeInterval = 2.5, completion: (() -> Void)? = .none) {
 		self.alphaValue = 1.0 - alphaValue
 		NSAnimationContext.runAnimationGroup { [weak self] context in
 			context.duration = duration
@@ -56,8 +63,9 @@ final class MarketButton: NSStatusBarButton {
 	// MARK: - Private
 	
 	private func configure() {
+		let showPremarketInBar = MarketManager.shared.showPremarketInBar
 		let tickersString = tickers
-			.map { " \($0.simpleSymbol) \($0.price?.priceString ?? "") " }
+			.map { " \($0.simpleSymbol) \(showPremarketInBar ? $0.priceString : $0.lastPriceString)" }
 			.reduce("", +)
 		
 		title = tickersString
