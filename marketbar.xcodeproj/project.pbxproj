@@ -37,7 +37,7 @@
 		A75D27BB25A8BC300059BEFD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A7818B8625A1CF450018958A /* MarketButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketButton.swift; sourceTree = "<group>"; };
 		A7818B8E25A20E360018958A /* TickersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewController.swift; sourceTree = "<group>"; };
-		A783FF2C2592572F00FFD25B /* marketbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marketbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A783FF2C2592572F00FFD25B /* Market Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Market Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A783FF2F2592572F00FFD25B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A783FF332592572F00FFD25B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A783FF382592572F00FFD25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		A783FF2D2592572F00FFD25B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A783FF2C2592572F00FFD25B /* marketbar.app */,
+				A783FF2C2592572F00FFD25B /* Market Bar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			);
 			name = marketbar;
 			productName = markerbar;
-			productReference = A783FF2C2592572F00FFD25B /* marketbar.app */;
+			productReference = A783FF2C2592572F00FFD25B /* Market Bar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -435,7 +435,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.manin.marketbar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Market Bar";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -460,7 +460,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.manin.marketbar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Market Bar";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
