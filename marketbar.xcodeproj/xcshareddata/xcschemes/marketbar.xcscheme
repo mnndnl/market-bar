@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A783FF2B2592572F00FFD25B"
-               BuildableName = "marketbar.app"
+               BuildableName = "Market Bar.app"
                BlueprintName = "marketbar"
                ReferencedContainer = "container:marketbar.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A783FF2B2592572F00FFD25B"
-            BuildableName = "marketbar.app"
+            BuildableName = "Market Bar.app"
             BlueprintName = "marketbar"
             ReferencedContainer = "container:marketbar.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A783FF2B2592572F00FFD25B"
-            BuildableName = "marketbar.app"
+            BuildableName = "Market Bar.app"
             BlueprintName = "marketbar"
             ReferencedContainer = "container:marketbar.xcodeproj">
          </BuildableReference>
