@@ -24,10 +24,10 @@
 - Press play
 
 ## Usage
-Paste a ticker of the Company or currency's symbol in Yahoo format (e.g. for Bitcoin/USD pair will be BTC-USD)
+Paste a ticker of the Company or currency's symbol in Yahoo format (e.g., for Bitcoin/USD pair will be BTC-USD)
 
 ## Contact
 For any further information or features, feel free to contact manin.develop@gmail.com
 
 ## P.S.
-You always can say -thanks- to the author and buy the application on the App Store
+You can always say -thanks- to the author and buy the application on the App Store
